@@ -11,8 +11,8 @@
     "terminal.background": "#202020",
   },
   "javascript.implicitProjectConfig.checkJs": true,
-//   "typescript.validate.enable": true,
-// "javascript.validate.enable": true,
+  //   "typescript.validate.enable": true,
+  // "javascript.validate.enable": true,
   "update.showReleaseNotes": false,
   "workbench.startupEditor": "none",
   "workbench.activityBar.visible": true,
@@ -22,17 +22,35 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [{
-    "before": ["j", "j"],
-    "after": ["<Esc>"]
-  }],
-  "vim.normalModeKeyBindingsNonRecursive": [{
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
     },
     {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     }
   ],
   "vim.leader": "<space>",
@@ -44,7 +62,8 @@
   "editor.fontFamily": "'DejaVu Sans Mono', Hack, Dank Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.tokenColorCustomizations": {
-    "textMateRules": [{
+    "textMateRules": [
+      {
         "scope": [
           //following will be in italic
           "meta.class meta.method.declaration meta.var.expr storage.type.js",
@@ -176,7 +195,8 @@
         }
       },
       {
-        "scope": ["punctuation.definition.string.begin",
+        "scope": [
+          "punctuation.definition.string.begin",
           "punctuation.definition.string.end"
         ],
         "settings": {
@@ -189,7 +209,8 @@
           "foreground": "#bef988"
           // conditionals
         }
-      }, {
+      },
+      {
         "scope": "string.unquoted, constant.other.object.key",
         "settings": {
           "foreground": "#009df2",
@@ -350,62 +371,103 @@
   "todohighlight.isEnable": true,
   "todohighlight.isCaseSensitive": true,
   "todohighlight.keywords": [
-      "DEBUG:",
-      "REVIEW:",
-      {
-          "text": "NOTE:",
-          "color": "#ff0000",
-          "backgroundColor": "yellow",
-          "overviewRulerColor": "grey"
-      },
-      {
-          "text": "HACK:",
-          "color": "#000",
-          "isWholeLine": false
-      },
-      {
-          "text": "TODO:",
-          "color": "#ffab00",
-          "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
-          "backgroundColor": "rgba(0,0,0,.2)",
-          //other styling properties goes here ...
-      }
-  ],
-  "todohighlight.keywordsPattern": "TODO:|FIXME:|HACK:|\\^\\)", //highlight `TODO:`,`FIXME:` or content between parentheses
-  "todohighlight.defaultStyle": {
+    {
+      "text": "DEBUG",
+      "color": "#fff",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#7e7e7e",
+      "borderColor": "#7e7e7e",
+      //other styling properties goes here .."
+    },
+    {
+      "text": "NOTE",
+      "color": "#ffe44e",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#ffe44e",
+      "borderColor": "#ffe44e",
+      //other styling properties goes here .."
+    },
+    {
+      "text": "HACK",
+      "color": "#d10000",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#d10000",
+      "borderColor": "#d10000",
+      //other styling properties goes here ...
+    },
+    {
+      "text": "TODO",
       "color": "#ffab00",
       "backgroundColor": "#000",
       "overviewRulerColor": "#ffab00",
-      "cursor": "pointer",
-      "padding": "3px",
-      "border": "1px solid #ffab00",
-      "borderRadius": "2px",
-      "isWholeLine": true
+      "borderColor": "#ffab00",
       //other styling properties goes here ...
-  },
+    },
+    {
+      "text": "FIXME",
+      "color": "#ff5ca8",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#ff5ca8",
+      "borderColor": "#ff5ca8",
+      //other styling properties goes here ...
+    },
+    {
+      "text": "///",
+      "color": "#ca93f8",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#ca93f8",
+      "borderColor": "#ca93f8b2",
+      //other styling properties goes here ...
+    },
+    {
+      "text": "DONE",
+      "color": "#07d400",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#07d400",
+      "borderColor": "#07d400",
+      //other styling properties goes here ...
+    },
+    {
+      "text": "REVIEW",
+      "color": "#00a2ff",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#00a2ff",
+      "borderColor": "#00a2ff",
+      //other styling properties goes here ...
+    },
+  ],
+  //"todohighlight.keywordsPattern": "TODO|FIXME|HACK|NOTE|\\^\\)", //highlight `TODO:`,`FIXME:` or content between parentheses
+  "todohighlight.defaultStyle": {
+  "cursor": "pointer",
+  "fontWeight":"bold",
+  "padding": "4px",
+  "borderRadius": "2px",
+  "border":"2px solid",
+  "isWholeLine": true,
+  //other styling properties goes here ...
+  //},
   "todohighlight.include": [
-      "**/*.js",
-      "**/*.jsx",
-      "**/*.ts",
-      "**/*.tsx",
-      "**/*.html",
-      "**/*.php",
-      "**/*.css",
-      "**/*.scss"
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
   ],
   "todohighlight.exclude": [
-      "**/node_modules/**",
-      "**/bower_components/**",
-      "**/dist/**",
-      "**/build/**",
-      "**/.vscode/**",
-      "**/.github/**",
-      "**/_output/**",
-      "**/*.min.*",
-      "**/*.map",
-      "**/.next/**"
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**"
   ],
   "todohighlight.maxFilesForSearch": 5120,
   "todohighlight.toggleURI": false
 }
-

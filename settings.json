@@ -1,0 +1,411 @@
+{
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "left",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "editor.minimap.enabled": false,
+  "workbench.statusBar.visible": true,
+  "workbench.editor.showTabs": true,
+  "liveServer.settings.port": 5560,
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#fdfae8",
+    "terminal.background": "#202020",
+  },
+  "javascript.implicitProjectConfig.checkJs": true,
+//   "typescript.validate.enable": true,
+// "javascript.validate.enable": true,
+  "update.showReleaseNotes": false,
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.visible": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [{
+    "before": ["j", "j"],
+    "after": ["<Esc>"]
+  }],
+  "vim.normalModeKeyBindingsNonRecursive": [{
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<S-space>": true
+  },
+  "editor.fontFamily": "'DejaVu Sans Mono', Hack, Dank Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [{
+        "scope": [
+          //following will be in italic
+          "meta.class meta.method.declaration meta.var.expr storage.type.js",
+          "source.go keyword.const.go",
+          "source.go keyword.var.go",
+          "storage",
+          "storage.type",
+          "variable",
+          "tag.decorator.js entity.name.tag.js",
+          "variable.other.object.property",
+          "meta.var.expr",
+          "comment",
+          "emphasis",
+          "entity.name.method.js",
+          "entity.name.class.js",
+          "entity.name.tag.doctype",
+          "entity.name.React",
+          "entity.other.attribute-name",
+          "entity.other.attribute-name.tag.jade",
+          "entity.other.attribute-name.tag.pug",
+          "keyword",
+          "keyword.control",
+          "keyword.operator.comparison",
+          "keyword.control.flow.js",
+          "keyword.control.flow.ts",
+          "keyword.control.flow.tsx",
+          "keyword.control.ruby",
+          "keyword.control.module.ruby",
+          "keyword.control.class.ruby",
+          "keyword.control.def.ruby",
+          "keyword.control.loop.js",
+          "keyword.control.loop.ts",
+          "keyword.control.import.js",
+          "keyword.control.import.ts",
+          "keyword.control.import.tsx",
+          "keyword.control.from.js",
+          "keyword.control.from.ts",
+          "keyword.control.from.tsx",
+          "keyword.operator.expression.delete",
+          "keyword.operator.new",
+          "keyword.operator.expression",
+          "keyword.operator.cast",
+          "keyword.operator.relational",
+          "keyword.operator.sizeof",
+          "keyword.operator.logical.python",
+          "italic",
+          "markup.italic",
+          "markup.quote",
+          "markup.changed",
+          "markup.italic.markdown",
+          "markup.quote.markdown",
+          "markup.deleted.diff",
+          "markup.inserted.diff",
+          "meta.delimiter.period",
+          "meta.diff.header.git",
+          "meta.diff.header.from-file",
+          "meta.diff.header.to-file",
+          "meta.tag.sgml.doctype",
+          "meta.decorator punctuation.decorator",
+          "meta.selector",
+          "punctuation.accessor",
+          "punctuation.definition.comment",
+          "punctuation.definition.template-expression.begin",
+          "punctuation.definition.template-expression.end",
+          // "punctuation.section.embedded",//braces brackets ets
+          "quote",
+          "source.js constant.other.object.key.js string.unquoted.label.js",
+          "source.go keyword.package.go",
+          "source.go keyword.import.go",
+          "source.go keyword.function.go",
+          "source.go keyword.type.go",
+          "source.go keyword.struct.go",
+          "source.go keyword.interface.go",
+          "source.go keyword.map.go",
+          "source.go keyword.channel.go",
+          "source.go keyword.control.go",
+          "storage.modifier",
+          "storage.type.property.js",
+          "storage.type.property.ts",
+          "storage.type.property.tsx",
+          "tag.decorator.js",
+          "text.html.basic entity.other.attribute-name.html",
+          "text.html.basic entity.other.attribute-name",
+          "variable.language",
+          "javascript"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {}
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#ffc402",
+        }
+      },
+      {
+        "scope": "variable.other.readwrite",
+        "settings": {
+          "foreground": "#41bd41",
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#77e3f3"
+        }
+      },
+      {
+        "scope": "entity.name.tag",
+        "settings": {
+          "foreground": "#f62929"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "foreground": "#b0bf9c",
+        }
+      },
+      {
+        "scope": "keyword.control",
+        "settings": {
+          "foreground": "#fe89ec",
+        }
+      },
+      {
+        "scope": ["punctuation.definition.string.begin",
+          "punctuation.definition.string.end"
+        ],
+        "settings": {
+          "foreground": "#ff0000",
+        }
+      },
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#bef988"
+          // conditionals
+        }
+      }, {
+        "scope": "string.unquoted, constant.other.object.key",
+        "settings": {
+          "foreground": "#009df2",
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "workbench.fontAliasing": "antialiased",
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "beautify.language": {
+    "js": {
+      "type": [
+        "json",
+        "jsonc"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautifyrc"
+      ]
+    },
+    "css": [
+      "css",
+      "scss"
+    ],
+    "html": [
+      "htm",
+      "html"
+    ]
+  },
+  "editor.tabSize": 2,
+  "vim.easymotionMarkerForegroundColorOneChar": "rgba(255, 64, 0, 1)",
+  "vim.easymotionMarkerForegroundColorTwoChar": "rgba(0, 191,255,1)",
+  "vim.easymotionMarkerBackgroundColor": "rgba(0,0,0,0.5)",
+  "sshfs.configs": [
+    {
+      "label": "IBMDEV",
+      "root": "/var/DOCKER_FILES/ibm-home/Datastream7i10/apache",
+      "host": "10.0.3.67",
+      "port": 22,
+      "username": "ivan.mamenemuno",
+      "password": "Cannonball0777$",
+      "name": "ibmdev"
+    },
+    {
+      "label": "IBMUAT",
+      "root": "/var/APP_SPACE/infor-eam/home/Datastream7i10/apache",
+      "host": "10.113.164.234",
+      "port": 8022,
+      "username": "root",
+      "password": "DJY6vzAH",
+      "name": "IBMUAT"
+    },
+    {
+      "label": "POC",
+      "root": "/home/ivan.m",
+      "host": "10.0.1.20",
+      "port": 22,
+      "username": "ivan.m",
+      "password": "roxane07",
+      "name": "poc"
+    },
+    {
+      "label": "IBMCusPort",
+      "root": "/",
+      "host": "10.0.3.185",
+      "port": 22,
+      "username": "R5",
+      "password": "Whirlwind",
+      "name": "IBMCusPort"
+    },
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.fontWeight": "600",
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 9e+21,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "underline": "#009df2",
+      }
+    }
+  },
+  "css.lint.emptyRules": "ignore",
+  "less.lint.emptyRules": "ignore",
+  "scss.lint.emptyRules": "ignore",
+  "workbench.colorTheme": "Monokai Pro",
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "bookmarks.navigateThroughAllFiles": true,
+  "remote.SSH.enableAgentForwarding": false,
+  "remote.SSH.enableDynamicForwarding": false,
+  "remote.SSH.lockfilesInTmp": true,
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+      "DEBUG:",
+      "REVIEW:",
+      {
+          "text": "NOTE:",
+          "color": "#ff0000",
+          "backgroundColor": "yellow",
+          "overviewRulerColor": "grey"
+      },
+      {
+          "text": "HACK:",
+          "color": "#000",
+          "isWholeLine": false
+      },
+      {
+          "text": "TODO:",
+          "color": "#ffab00",
+          "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+          "backgroundColor": "rgba(0,0,0,.2)",
+          //other styling properties goes here ...
+      }
+  ],
+  "todohighlight.keywordsPattern": "TODO:|FIXME:|HACK:|\\^\\)", //highlight `TODO:`,`FIXME:` or content between parentheses
+  "todohighlight.defaultStyle": {
+      "color": "#ffab00",
+      "backgroundColor": "#000",
+      "overviewRulerColor": "#ffab00",
+      "cursor": "pointer",
+      "padding": "3px",
+      "border": "1px solid #ffab00",
+      "borderRadius": "2px",
+      "isWholeLine": true
+      //other styling properties goes here ...
+  },
+  "todohighlight.include": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.html",
+      "**/*.php",
+      "**/*.css",
+      "**/*.scss"
+  ],
+  "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/_output/**",
+      "**/*.min.*",
+      "**/*.map",
+      "**/.next/**"
+  ],
+  "todohighlight.maxFilesForSearch": 5120,
+  "todohighlight.toggleURI": false
+}
+

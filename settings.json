@@ -380,6 +380,15 @@
       //other styling properties goes here .."
     },
     {
+      "text": "TEST",
+      "color": "#000000",
+      "backgroundColor": "#ffffff97",
+      "overviewRulerColor": "#fff",
+      "border":"2px dashed",
+      "borderColor": "#00000055",
+      //other styling properties goes here .."
+    },
+    {
       "text": "NOTE",
       "color": "#ffe44e",
       "backgroundColor": "#000",
@@ -445,7 +454,7 @@
   "border":"2px solid",
   "isWholeLine": true,
   //other styling properties goes here ...
-  //},
+  },
   "todohighlight.include": [
     "**/*.js",
     "**/*.jsx",
@@ -469,5 +478,6 @@
     "**/.next/**"
   ],
   "todohighlight.maxFilesForSearch": 5120,
-  "todohighlight.toggleURI": false
+  "todohighlight.toggleURI": false,
+  "explorer.autoReveal": false
 }
